@@ -22,22 +22,22 @@ Set the type and color theme here -->
 <div class="row">
 	<div class="small-12 medium-12 large-12 small-centered columns">
 		<header>		
-			<h1><a href="index.html">Ingrwf05</a></h1>
-			<h2><a href="index.html">Design & Programmation</a></h2>
+			<h1><a href="index.php">Ingrwf05</a></h1>
+			<h2><a href="index.php">Design & Programmation</a></h2>
 			
 			<div class="logo">
-				<a href="index.html"><img src="img/logo.png" alt="Your Name Here" /></a>
-			</div>
+				<a href="index.php"><img src="img/logo.png" alt="Your Name Here" /></a>
+			</div> <!-- logo -->
 			
 		</header>
-	</div>
+	</div> <!-- columns -->
 	<div class="small-12 medium-12 large-12 small-centered columns">
 		<nav>
 			<ul class="inline-list-custom">
-				<li><a href="#" class="current">En vedette</a></li>
-				<li><a href="about.html">A propos</a></li>
-				<li><a href="contact.html">Contact</a></li>						
+				<li><a href="index.php">En vedette</a></li>
+				<li><a href="?page=about">A propos</a></li>
+				<li><a href="?page=contact">Contact</a></li>						
 			</ul>
 		</nav>
-	</div>
-</div>
+	</div> <!-- columns -->
+</div> <!-- row -->

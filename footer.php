@@ -15,8 +15,8 @@
 				<a href="https://www.facebook.com/groups/1831705337148630/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
 			</div>
 		</footer>
-	</div>
-</div>
+	</div> <!-- columns --> 
+</div> <!-- row --> 
 
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/foundation.min.js"></script>
