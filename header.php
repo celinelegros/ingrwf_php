@@ -34,9 +34,9 @@ Set the type and color theme here -->
 	<div class="small-12 medium-12 large-12 small-centered columns">
 		<nav>
 			<ul class="inline-list-custom">
-				<li><a href="index.php">En vedette</a></li>
-				<li><a href="?page=about">A propos</a></li>
-				<li><a href="?page=contact">Contact</a></li>						
+				<li><a href="index.html"<?php myCurrent("index"); ?>>En vedette</a></li>
+				<li><a href="about.html"<?php myCurrent("about"); ?>>A propos</a></li>
+				<li><a href="contact.html"<?php myCurrent("contact"); ?>>Contact</a></li>						
 			</ul>
 		</nav>
 	</div> <!-- columns -->

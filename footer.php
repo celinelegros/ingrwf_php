@@ -24,3 +24,5 @@
 
 </body>
 </html>
+
+<?php debug() ?>

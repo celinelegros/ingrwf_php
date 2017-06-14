@@ -51,5 +51,3 @@
 		<p class="back-to-top-holder"><a class="back-to-top"><i class="fa fa-chevron-circle-up fa-3x"></i></a></p>
 	</div> <!-- columns -->
 </div> <!-- row -->
-
-<?php print_r($_GET); ?> 
