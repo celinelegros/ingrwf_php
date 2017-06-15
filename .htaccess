@@ -1,5 +1,5 @@
 RewriteEngine on 
 RewriteRule perdu.html index.php [L]
-RewriteRule project-([0-9]*)\.html index.php?projet=$1 [L]
+RewriteRule projet-([0-9]*)\.html index.php?projet=$1 [L]
 RewriteRule ([a-z]*)\.html index.php?page=$1 [L]
 # comment

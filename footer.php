@@ -17,11 +17,19 @@
 		</footer>
 	</div> <!-- columns --> 
 </div> <!-- row --> 
-
 <script src="js/vendor/jquery.min.js"></script>
+<script>
+	myBtn = $('#add-module').on("click", function(event){
+		//alert('ok');
+		$('#module_form').toggle("slow");
+	});
+</script>
+
+
 <script src="js/foundation.min.js"></script>
 <script src="js/hawthorne.js"></script>
-
+  <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+  <script>tinymce.init({ selector:'textarea' });</script>
 </body>
 </html>
 
