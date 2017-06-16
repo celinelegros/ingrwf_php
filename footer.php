@@ -17,6 +17,9 @@
 		</footer>
 	</div> <!-- columns --> 
 </div> <!-- row --> 
+
+<?php include("admin.php");?>
+
 <script src="js/vendor/jquery.min.js"></script>
 <script>
 	myBtn = $('#add-module').on("click", function(event){
@@ -24,7 +27,6 @@
 		$('#module_form').toggle("slow");
 	});
 </script>
-
 
 <script src="js/foundation.min.js"></script>
 <script src="js/hawthorne.js"></script>

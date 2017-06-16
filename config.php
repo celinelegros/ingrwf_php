@@ -1,6 +1,6 @@
 <?php 
 
-##Configuration pour aller chercher les informations via la BD du localhost
+##Configuration pour aller chercher les informations via la DB du localhost
 
 define("DB_HOST","localhost");
 define("DB_NAME","article");
@@ -14,3 +14,5 @@ if($connect -> error) :
     exit;
     else : $connect -> set_charset("utf-8");
     endif;
+
+session_start();

@@ -22,6 +22,10 @@
                 print_r($_GET);
             echo "<strong>POST</strong> <br>";           
                 print_r($_POST);
+                echo "<strong>SESSION</strong> <br>";           
+                print_r($_SESSION);
+                //echo "<strong>SESSION ROLE</strong> <br>";           
+                //print_r($_SESSION['role']);
             echo "</pre>";
             echo "</div>";
         endif;

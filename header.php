@@ -14,7 +14,37 @@ Set the type and color theme here -->
 
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <script src="js/vendor/modernizr.js"></script>
+<style>
+#loginForm{
+	position:absolute;
+	z-index: 1; 
+	top:100px;
+	margin-left:35%; 
+	padding: 60px 100px;
+	background-color:white;
+}
+#loginForm form input {
+	width : 250px;
+}
+#filtre{
+	position: absolute;
+	width: 100%;
+	height:100%;;
+	background-color: black;
+	top:0px;
+	opacity: 0.8;
+}
+.erreur{
+	color:red;
+}
+.fermBtn{
+	float: right;
+}
+.fermBtn a{
+	color: white;
+}
 
+</style>
 </head>
 <body>
 <div class="top-border"></div>
@@ -36,7 +66,10 @@ Set the type and color theme here -->
 			<ul class="inline-list-custom">
 				<li><a href="index.html"<?php myCurrent("index"); ?>>En vedette</a></li>
 				<li><a href="about.html"<?php myCurrent("about"); ?>>A propos</a></li>
-				<li><a href="contact.html"<?php myCurrent("contact"); ?>>Contact</a></li>						
+				<li><a href="contact.html"<?php myCurrent("contact"); ?>>Contact</a></li>
+				<?php if(isset($_SESSION['id_user'])): ?>
+				<li><a href="admin.php?delog">Se déconnecter</a></li>	
+				<?php endif;?>					
 			</ul>
 		</nav>
 	</div> <!-- columns -->

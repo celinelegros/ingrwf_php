@@ -1,6 +1,9 @@
 <?php 
-if (isset($_POST['insert_module'])):
-require("config.php");
+##Si jms le module est chargé plusieurs fois, la commande ne le charge qu'une fois
+require_once("config.php");
+##On rajoute isset $_SESSION pour que l'on ne puisse envoyer le formulaire au serveur que lorsque l'on est connecté
+if (isset($_POST['insert_module'])&& isset($_SESSION['id_user'])):
+
 $sql=sprintf("INSERT INTO modules SET titre='%s', contenu='%s', role='%s', responsable='%s', centre='%s', annee='%s', image1='%s', alt_image1='%s', image2='%s', alt_image2='%s', image3='%s', alt_image3='%s'",
 addslashes($_POST['titre']),
 addslashes($_POST['contenu']),
@@ -27,6 +30,8 @@ $modules_list = $connect->query($sql);
 echo $connect->error;
 $nb_modules = $modules_list->num_rows;
 ?>
+
+
 <div class="row">
 	<div class="small-12 medium-12 large-12 columns">
 		<ul class="small-block-grid-1 medium-block-grid-3 large-block-grid-3 inline-list-custom">
@@ -45,7 +50,7 @@ $nb_modules = $modules_list->num_rows;
 			<?php endwhile; ?>
 
 		</ul>
-
+<?php if (isset($_SESSION['id_user'])) :?>
 		<button id="add-module">Ajouter un module</button>
 
 		<form style="display:none;" method="post" action="home.php" id="module_form">
@@ -85,8 +90,6 @@ $nb_modules = $modules_list->num_rows;
 			<button type="submit">Envoyer</button>
 
 		</form>
-
+<?php endif; ?>
 	</div> <!-- column  -->
 </div> <!-- row -->
-
-<?php print_r($_POST); ?>
